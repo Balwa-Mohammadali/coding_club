@@ -135,6 +135,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 DEBUG = False
-ALLOWED_HOSTS = ['Coding_Club.onrender.com']
+
+ALLOWED_HOSTS = ['coding-club.onrender.com']
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
