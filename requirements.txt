@@ -7,3 +7,4 @@ numpy>=2.3.0
 pandas>=2.3.0
 openpyxl
 requests
+whitenoise==6.7.0
