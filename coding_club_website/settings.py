@@ -126,3 +126,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+DEBUG = False
+ALLOWED_HOSTS = ['Coding_Club.onrender.com']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
