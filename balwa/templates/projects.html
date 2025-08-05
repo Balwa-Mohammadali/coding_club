@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects | Coding Club{% endblock %}
+
+{% block content %}
+<section id="projects" class="py-5 bg-black text-light fade-in">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-5 pop-hover">Our Projects</h2>
+
+    <!-- Project Card 1 -->
+    <div class="mb-4 d-flex justify-content-center">
+      <div class="card bg-dark border-danger shadow-sm w-100" style="max-width: 600px;">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Project Alpha</h5>
+          <p class="card-text text-light">AI-powered web app for automation that streamlines repetitive tasks.</p>
+          <a href="#" class="btn btn-outline-danger">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="mb-4 d-flex justify-content-center">
+      <div class="card bg-dark border-danger shadow-sm w-100" style="max-width: 600px;">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Project Beta</h5>
+          <p class="card-text text-light">Blockchain-based voting system ensuring transparency and security.</p>
+          <a href="#" class="btn btn-outline-danger">More Info</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="mb-4 d-flex justify-content-center">
+      <div class="card bg-dark border-danger shadow-sm w-100" style="max-width: 600px;">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Project Gamma</h5>
+          <p class="card-text text-light">IoT solution to monitor real-time data in smart agriculture.</p>
+          <a href="#" class="btn btn-outline-danger">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Apply | Coding Club{% endblock %}
+
+{% block content %}
+<section id="apply" class="py-5 bg-black text-light fade-in">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-5 pop-hover">Apply for Joining</h2>
+
+    <form method="post" action="{% url 'apply' %}" class="bg-dark p-4 rounded shadow w-100 mx-auto" style="max-width: 600px;">
+      {% csrf_token %}
+
+      <div class="mb-3">
+        <label for="name" class="form-label text-light">Name</label>
+        <input type="text" class="form-control bg-black text-light border-danger" id="name" name="name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label text-light">Email</label>
+        <input type="email" class="form-control bg-black text-light border-danger" id="email" name="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="branch" class="form-label text-light" >Branch / Year</label>
+        <input type="text" class="form-control bg-black text-light border-danger" id="branch" name="branch" required>
+      </div>
+
+      <div class="mb-4">
+        <label for="reason" class="form-label text-light">Why do you want to join?</label>
+        <textarea class="form-control bg-black text-light border-danger" id="reason" name="why" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-outline-danger w-100">Submit Application</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

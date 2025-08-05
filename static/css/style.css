@@ -1,0 +1,68 @@
+.hover-nav:hover {
+    background-color: #dc3545;
+    color: white !important;
+    transition: 0.3s ease-in-out;
+  }
+
+
+.timeline {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #dc3545;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 3px;
+}
+
+.timeline-content {
+  margin-left: 1rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ff4c4c !important;
+}
+
+ /* Pop-out effect on hover */
+  .pop-hover:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+  }
+
+  /* Glowing button on hover */
+  .glow-hover:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6), 0 0 25px rgba(255, 0, 0, 0.4);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+
+/*home page gec palanpur coding club*/
+  .homegecpl:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  .homegecpl{
+    font-family: 'Orbitron', sans-serif;
+  }

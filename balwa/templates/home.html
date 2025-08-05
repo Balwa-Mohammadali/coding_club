@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home | Coding Club{% endblock %}
+
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="text-center py-5 bg-black text-light fade-in">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3 pop-hover homegecpl">GEC Palanpur Coding Club</h1>
+    <p class="lead mb-4">Empowering coders to build, innovate, and grow.</p>
+    <a href="{% url 'apply' %}" class="btn btn-danger btn-lg glow-hover">Join Us</a>
+  </div>
+</section>
+
+<!-- About College Summary -->
+
+
+
+<section id="about-coding-club" class="bg-black text-light py-5 fade-in">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-4">About the Coding Club</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <p class="fs-5">
+          🚀 <strong>Founded in 2023</strong>, the Coding Club of Government Engineering College, Palanpur, was created to ignite a passion for technology, programming, and innovation among students. Our mission is to build a community where learners turn into creators, and ideas become real-world solutions.
+        </p>
+        <p class="fs-5">
+          💻 We organize coding competitions, workshops, hackathons, open-source drives, and guest sessions from industry professionals. The club fosters a collaborative environment where every coder — beginner or advanced — feels welcomed and inspired.
+        </p>
+        <p class="fs-5">
+          🛠️ Our members explore diverse domains like Web Development, Python, C++, Data Structures, Git & GitHub, Competitive Programming, and emerging tech like AI & Blockchain.
+        </p>
+        <p class="fs-5">
+          🌐 Whether you want to build projects, improve problem-solving skills, or showcase your talent — this is your space!
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="{% static 'images/\Screenshot_5-8-2025_14757_web.whatsapp.com.jpeg' %}" alt="Coding Club Illustration" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-danger">50+ Active Members</h5>
+            <p class="card-text">From all branches & years, collaborating on exciting challenges & projects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-danger">10+ Projects</h5>
+            <p class="card-text">Web apps, open-source tools, automation scripts, and real-world solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-light h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Monthly Events</h5>
+            <p class="card-text">Hackathons, coding jams, career talks, and developer meetups every month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="{% url 'projects' %}" class="btn btn-danger btn-lg">Explore Our Projects</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+

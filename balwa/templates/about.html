@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About | Coding Club{% endblock %}
+
+{% block content %}
+<section id="about" class="py-5 bg-black text-light fade-in">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-5 pop-hover">About Us</h2>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="{% static 'images\WhatsApp Image 2025-08-05 at 6.27.31 AM.jpeg' %}" alt="Coding Club Team" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-dark text-light border-danger">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-danger">Who We Are</h5>
+            <p class="card-text">
+              The Coding Club at <strong>GEC Palanpur</strong> is a passionate community of developers, designers, and innovators.
+              We conduct events, workshops, and build projects that create real impact.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-dark text-light border-0">💡 Learn modern tech stacks</li>
+              <li class="list-group-item bg-dark text-light border-0">🤝 Collaborate with peers</li>
+              <li class="list-group-item bg-dark text-light border-0">🚀 Build real-world projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-center text-light fw-bold mb-4">Our Journey</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="dot bg-danger"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1 text-danger">2023 - Club Launched</h5>
+          <p class="text-light">Started with a small group of enthusiastic coders at GEC Palanpur.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="dot bg-danger"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1 text-danger">2024 - Hackathon Hosted</h5>
+          <p class="text-light">Successfully hosted our first in-house hackathon with 100+ participants.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="dot bg-danger"></span>
+        <div class="timeline-content">
+          <h5 class="mb-1 text-danger">2025 - Expanded Projects</h5>
+          <p class="text-light">Launched open-source projects and collaborated with clubs from other colleges.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
