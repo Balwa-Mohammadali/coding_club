@@ -30,8 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
-
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+if not ALLOWED_HOSTS or ALLOWED_HOSTS == [""]:
+    ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -136,7 +137,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['coding-club.onrender.com']
+ALLOWED_HOSTS = ['gecpl-coding-club.onrender.com']
+
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
