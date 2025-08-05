@@ -1,1 +1,2 @@
-web: gunicorn coding_club.wsgi
+web: gunicorn coding_club_website.wsgi
+
