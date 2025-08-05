@@ -20,7 +20,8 @@ def apply_view(request):
         Ap=applyForm(request.POST)
         if Ap.is_valid():
             balwa=Ap.save(commit=False)
-            balwa.user=request.user
+            if request.user.is_authenticated:
+                balwa.user=request.user
             balwa.save()
             return redirect('home')
         
@@ -35,7 +36,8 @@ def contact_view(request):
         con=ContactForm(request.POST)
         if con.is_valid():
             bal=con.save(commit=False)
-            bal.user=request.user
+            if request.user.is_authenticated:
+                bal.user=request.user
             bal.save()
             return redirect('home')
         
